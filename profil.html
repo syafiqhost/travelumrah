@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+        :root {
+            --primary: #ffe600;
+            --bg: #010101;
+        }
+
+        body,
+        ul,
+        li,
+        a {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ddd;
+            color: #333;
+        }
+
+        .bontainer {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .judul {
+            text-align: center;
+            font-size: 2.5rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+          padding: 20px;
+          width: 50%;
+          height: 10%;
+          background: none;
+          margin-left: 300px;
+          color: black;
+        }
+
+        .service-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .service-card {
+            background-color: #fff;
+            width: calc(33% - 20px);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card img {
+            padding-top: 10px;
+            padding-left: 100px;
+            width: 50%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .service-card-content {
+            padding: 20px;
+        }
+
+        .service-card-content h3 {
+            font-size: 1.8rem;
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .service-card-content p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .service-card {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .service-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="kabah-removebg-preview.png" alt="" class="img"> <span>Syafiq Travel</span>
+            </a>
+        </div>
+        <ul class="navbar-nav">
+            <li><a href="index.html" class="menu-item"><span>Home</span></a></li>
+            <li><a href="profil.html" class="menu-item"><span>Profil</span></a></li>
+            <li><a href="about.html" class="menu-item"><span>paket umroh</span></a></li>
+            <li><a href="kontak.html" class="menu-item"><span>Contact</span></a></li>
+        </ul>
+        <div class="navbar-extra">
+            <a href="#" id="hamburger-menu">
+                <i data-feather="menu"></i>
+            </a>
+        </div>
+        <div class="contact-container">
+            <a href="tel:087877566677" class="contact">
+                <span class="phone-icon"></span>
+                <span class="phone-number">0878 7756 6677</span>
+            </a>
+        </div>
+    </nav>
+    <div class="bontainer">
+        <h2 class="judul">Kenapa Harus Memilih Umrah di Syafiq travel ?</h2>
+
+        <div class="service-cards">
+            <div class="service-card">
+                <img src="review.png" alt="Service 1">
+                <div class="service-card-content">
+                    <h3>Hotel Bintang 5</h3>
+                    <p>Kami berkerja sama dengan mitra terkemuka di industri perhotelan dan transportasi untuk menjamin kenyamanan dan keselamatan selama perjalanan anda</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="tag.png" alt="Service 2">
+                <div class="service-card-content">
+                    <h3>Diskon Ramadhan</h3>
+                    <p>Kami selalu mengadakan Diskon setiap ramadhan.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="support.png" alt="Service 3">
+                <div class="service-card-content">
+                    <h3>24 jam pelayanan pelanggan</h3>
+                    <p>tim pelayanan pelanggan kami siap membantu anda dengan setiap pertanyaan atau permintaan yang anda miliki,sebelum,selama, dan setelah perjalanan anda</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="shield.png" alt="Service 4">
+                <div class="service-card-content">
+                    <h3>terpercaya</h3>
+                    <p>itulah mengapa syafiq travel menawarkan beragam paket umrah yang di rancang untuk memenuhi</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="customer-review.png" alt="Service 5">
+                <div class="service-card-content">
+                    <h3>testimoni</h3>
+                    <p>dari pelanggan yang sudah memilih travel kami selalu memberi kami rating yang terbaik</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="customer-service.png" alt="Service 6">
+                <div class="service-card-content">
+                    <h3>pelayanan terbaik</h3>
+                    <p>perusahaan dan tim kami pasti selalu memberikan yang terbaik untuk pelanggan</p>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- footer start -->
+ <div class="get-in-touch">
+
+    <p>Mari bertanya kepada admin kami agar menyesuaikan keinginan anda, kemitraan yang hebat dimulai dengan saling pengertian dan profesional untuk meraih kesuksesan..</p>
+    <hr>
+    <div class="icon-email">
+        <p>
+            </a> <span>&copy; 2024 All Rights Reserved.</span></p>
+
+        <div class="address">
+            <span class="icon">📍</span>
+            <p>Jl. cipto, kota cirebon, Indonesia</p>
+        </div>
+    </div>
+    <h4>OUR SOCIAL MEDIA</h4>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/" target="_blank" id="instagram">
+            <i data-feather="instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank" id="youtube">
+            <i data-feather="youtube"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" id="facebook">
+            <i data-feather="facebook"></i>
+        </a>
+
+        <a href="https://twitter.com/" target="_blank" id="twitter">
+            <i data-feather="twitter"></i>
+        </a>
+    </div>
+</div>
+<a href="https://whatsapp.me/087877566677" class="whatsapp">
+    <img src="iconwa.png" alt="">
+</a>
+<script>
+    AOS.init();
+    feather.replace();
+</script>
+
+<!-- My JS -->
+<script src="script.js" defer></script>
+</body>
+</html>
